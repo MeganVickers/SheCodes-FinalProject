@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jellycat</title>
+    <style>
+      h1 {
+        text-align: center;
+        margin-bottom: 0px;
+        color: #11bfd6;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+      }
+      h3 {
+        text-align: center;
+        margin-top: 0px;
+        color: #11bfd6;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 0px;
+      }
+      p {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 75px 0px 75px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .logo img {
+        width: 100px;
+        display: block;
+        margin: auto;
+        padding-top: 0px;
+      }
+      .examples img {
+        width: 150px;
+        border: 2px solid rgb(203, 203, 203);
+        border-radius: 5px;
+        display: inline-block;
+        margin: 0px 30px;
+       
+      }
+      body {
+        background-color: rgb(213, 239, 242);
+      }
+      .learnMore a {
+        text-decoration: underline;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       display: block;
+       text-align: center;
+     color: black
+       ;
+      }
+    
+      button{
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #11bfd6;
+        border-radius: 30px;
+        background-color: white;
+        padding: 20px 30px;
+        color: #11bfd6;box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: #11bfd6;
+        color: white;
+        cursor: pointer;
+      }
+     li{
+        display: inline-block;
+        text-align: center;
+     }
+     ul{
+        text-align: center;
+        padding: 0;
+     }
+     .examples{
+        cursor: pointer;
+     }
+     
+    </style>
+  </head>
+  <body>
+    <h1>Jellycat</h1>
+    <h3>London</h3>
+    <div class="logo">
+      <img src="images/crop jelly png.png" alt="Jellycat logo" />
+    </div>
+    <hr/>
+    <p>
+      Creating original and innovative soft toys in London since 1999, Jellycat
+      continues to combine luxurious fabrics with designs that are sometimes
+      quirky, sometimes cute but always with a little something different that
+      makes them stand out from the crowd! The name Jellycat was dreamt up by a
+      child who loved jellies and cats and giggled at the thought of the two
+      together. The silliness of the name was a great reflection of the design
+      and so it stuck!
+      <br />
+      <br />
+      <div class="learnMore"><a href="https://www.jellycat.com/about/">Click here to learn more</a></div>
+    </p>
+
+    <p>Here are some Jellycats from my collection: <br/><br/>
+    Click them to see their names!</p>
+    <ul>
+    <div class="examples">
+        <li>
+      <img
+        src="https://www.jellycat.com/images/products/medium/FLUM3P.jpg"
+        alt="pig" onclick="alert('Flumpie Pig!')"
+      /></li>
+      <li>
+      <img
+        src="https://www.jellycat.com/images/products/large/A2CL.jpg"
+        alt="cloud" onclick="alert('Amuseable Cloud!')"
+      /></li>
+      <li>
+
+      <img
+        src="https://www.jellycat.com/images/products/medium/F6W.jpg"
+        alt="whale" onclick="alert('Fluffy Whale!')"
+      /></li>
+    </div></ul>
+    <button>Shop the collection</button>
+  <script>
+    function askAge(){
+    let age = prompt("How old are you?");
+    if (age >= 18) {alert ("Happy shopping!"); window.location = "https://www.jellycat.com/"}
+    else {alert ("Sorry, you are too young to purchase")}
+}
+     let shopButton = document.querySelector("button");
+    shopButton.addEventListener("click", askAge);
+  </script>
+  </body>
+</html>
